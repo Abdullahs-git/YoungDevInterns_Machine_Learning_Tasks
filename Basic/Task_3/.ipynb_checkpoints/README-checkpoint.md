@@ -1,56 +1,44 @@
-# Task 3 – Plot the Regression Line and Make Predictions
+# Task 3 – Correlation Analysis and Visualization
 
-##  Objective
-The goal of this task is to build and visualize a **Linear Regression model** using a synthetic dataset, evaluate its performance, and make predictions for new data points.
+## Objective
+The objective of this task is to analyze and visualize the correlation between two numerical features using scatter plots and regression lines.  
+This task demonstrates how relationships between variables can be positive, negative, or have no correlation, and how these relationships can be represented visually using Matplotlib and Seaborn.
 
----
+## Task Description
+In this task, three synthetic datasets are generated to illustrate different types of correlations:
+- Positive Correlation: As one feature increases, the other also increases.
+- Negative Correlation: As one feature increases, the other decreases.
+- No Correlation: No clear relationship exists between the two features.
 
-##  Task Description
-- Generate a dataset that follows a roughly linear trend but includes random noise.  
-- Train a **Linear Regression model** using `scikit-learn`.  
-- Plot both the **data points** and the **regression line** to visualize model performance.  
-- Evaluate the model using **Mean Squared Error (MSE)** and **R² Score**.  
-- Make predictions for new unseen values and analyze the results.
+The script performs both numerical correlation analysis (using Pearson’s correlation coefficient) and visual analysis through scatter plots.
 
----
+## Concepts Covered
+- Understanding correlation and its significance  
+- Calculating Pearson’s correlation coefficient  
+- Visualizing relationships using Matplotlib and Seaborn  
+- Creating and interpreting scatter plots and regression lines
 
-##  Concepts Covered
-- Linear Regression Fundamentals  
-- Model Training and Evaluation  
-- Data Visualization (Matplotlib)  
-- Model Prediction and Performance Metrics
+## Tools and Libraries
+- Python 3.x  
+- NumPy – for generating synthetic data  
+- Pandas – for data handling and correlation calculation  
+- Matplotlib – for basic visualizations  
+- Seaborn – for enhanced plots and regression line fitting
 
----
+## Steps Implemented
+1. Generate Synthetic Data  
+   Created three datasets demonstrating positive, negative, and no correlation using NumPy.
+2. Compute Correlation Coefficients  
+   Calculated the Pearson correlation coefficient using the Pandas `.corr()` method.
+3. Visualize Relationships  
+   Used Matplotlib and Seaborn to plot scatter plots with regression lines for each dataset.
+4. Interpret Results  
+   Compared the visual patterns and correlation values to understand the relationships.
 
-## ⚙️ Tools & Libraries
-- **Python 3.x**  
-- **NumPy** – for numerical computations  
-- **Matplotlib** – for data visualization  
-- **scikit-learn** – for Linear Regression and metrics
-
----
-
-##  Steps Implemented
-1. **Import Libraries** – Load NumPy, Matplotlib, and scikit-learn modules.  
-2. **Create Dataset** – Generate synthetic data with noise.  
-3. **Train Model** – Fit a `LinearRegression()` model.  
-4. **Evaluate Model** – Compute MSE and R² scores.  
-5. **Visualize Results** – Plot regression line and actual data points.  
-6. **Make Predictions** – Predict outcomes for new values.
-
----
-
-##  Expected Output
-- A plotted regression line fitting the noisy dataset.  
-- Printed model parameters: **intercept** and **slope**.  
-- Evaluation metrics: **Mean Squared Error** and **R² Score**.  
-- Predicted results for new `X` values displayed in the console.
-
----
-##  Conclusion
-This task demonstrates how Linear Regression can effectively model linear relationships between variables. By plotting and predicting, we visualize how well the model generalizes, laying the foundation for more advanced regression techniques.
-
----
+## Conclusion
+This task demonstrates how correlation can be both numerically and visually analyzed.  
+By combining statistical measures with visualization, it becomes easier to identify the strength and direction of relationships between variables.  
+This serves as a fundamental step in exploratory data analysis for machine learning workflows.
 
 **Author:** Muhammad Abdullah Butt  
 **Internship:** AI & ML Intern – YoungDev Interns  
